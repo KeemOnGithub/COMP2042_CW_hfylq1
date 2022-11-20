@@ -1,6 +1,5 @@
 package com.example.demo;
 
-
 import javafx.scene.Group;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
@@ -50,7 +49,6 @@ public class Cell {
         setColorByNumber(getNumber());
         cell.setColorByNumber(cell.getNumber());
     }
-
     void adder(Cell cell) {
         cell.getTextClass().setText((cell.getNumber() + this.getNumber()) + "");
         textClass.setText("0");
