@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import java.util.Random;
 
 class GameScene {
-    private static int HEIGHT = 700;
+    private static int HEIGHT = 500;
     private static int n = 4;
     private final static int distanceBetweenCells = 10;
     private static double LENGTH = (HEIGHT - ((n + 1) * distanceBetweenCells)) / (double) n;
@@ -20,6 +20,7 @@ class GameScene {
     private Cell[][] cells = new Cell[n][n];
     private Group root;
     private long score = 0;
+    private int leftSpacing = 150;
 
     static void setN(int number) {
         n = number;
@@ -260,7 +261,7 @@ class GameScene {
         this.root = root;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                cells[i][j] = new Cell((j) * LENGTH + (j + 1) * distanceBetweenCells,
+                cells[i][j] = new Cell((j) * LENGTH + (j + 1) * distanceBetweenCells + leftSpacing,
                         (i) * LENGTH + (i + 1) * distanceBetweenCells, LENGTH, root);
             }
 
@@ -270,10 +271,10 @@ class GameScene {
         root.getChildren().add(text);
         text.setText("SCORE :");
         text.setFont(Font.font(30));
-        text.relocate(750, 100);
+        text.relocate(250,550);
         Text scoreText = new Text();
         root.getChildren().add(scoreText);
-        scoreText.relocate(750, 150);
+        scoreText.relocate(450,567);
         scoreText.setFont(Font.font(20));
         scoreText.setText("0");
 

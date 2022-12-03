@@ -28,22 +28,22 @@ public class EndGame {
 
     public void endGameShow(Scene endGameScene, Group root, Stage primaryStage,long score){
         Text text = new Text("GAME OVER");
-        text.relocate(250,250);
+        text.relocate(180,200);
         text.setFont(Font.font(80));
         root.getChildren().add(text);
 
 
         Text scoreText = new Text(score+"");
         scoreText.setFill(Color.BLACK);
-        scoreText.relocate(250,600);
+        scoreText.relocate(280,400);
         scoreText.setFont(Font.font(80));
         root.getChildren().add(scoreText);
 
         Button quitButton = new Button("QUIT");
         quitButton.setPrefSize(100,30);
-        quitButton.setTextFill(Color.PINK);
+        quitButton.setTextFill(Color.BLACK);
         root.getChildren().add(quitButton);
-        quitButton.relocate(100,800);
+        quitButton.relocate(330,500);
         quitButton.setOnMouseClicked(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent event) {
