@@ -11,10 +11,12 @@ import javafx.scene.control.*;
 import javafx.scene.control.ButtonType;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.*;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.media.Media;
 
 import java.util.Optional;
 import java.util.Scanner;
@@ -43,8 +45,12 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         theStage = primaryStage;
         theStage.setResizable(false);
+        Media ost = new Media(getClass().getResource("Thin Ice.mp3").toExternalForm());
+        MediaPlayer mediaPlayer = new MediaPlayer(ost);
+        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("menuScene.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        mediaPlayer.play();
 
         primaryStage.setTitle("2048");
         primaryStage.setScene(scene);
