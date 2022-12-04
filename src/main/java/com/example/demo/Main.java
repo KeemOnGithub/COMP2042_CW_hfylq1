@@ -17,6 +17,7 @@ import javafx.stage.Stage;
 import javafx.scene.control.Button;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.media.Media;
+import javafx.animation.Animation;
 
 import java.util.Optional;
 import java.util.Scanner;
@@ -28,6 +29,8 @@ public class Main extends Application {
     private Group menuRoot = new Group();
     private Scene menuScene = new Scene(menuRoot, WIDTH, HEIGHT, Color.rgb(189, 177, 92));
     private static Scanner input= new Scanner(System.in);
+    Media ost = new Media(getClass().getResource("Rite of Passage.mp3").toExternalForm());
+    MediaPlayer mediaPlayer = new MediaPlayer(ost);
 
     /*public void setGameScene(Scene gameScene) {
         this.gameScene = gameScene;
@@ -45,16 +48,13 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         theStage = primaryStage;
         theStage.setResizable(false);
-        Media ost = new Media(getClass().getResource("Thin Ice.mp3").toExternalForm());
-        MediaPlayer mediaPlayer = new MediaPlayer(ost);
-        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("menuScene.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         mediaPlayer.play();
 
-        primaryStage.setTitle("2048");
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        theStage.setTitle("2048");
+        theStage.setScene(scene);
+        theStage.show();
 
         /*Group menuRoot = new Group();
         Scene menuScene = new Scene(menuRoot, WIDTH, HEIGHT);
