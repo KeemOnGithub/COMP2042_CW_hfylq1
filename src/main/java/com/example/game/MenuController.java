@@ -37,4 +37,23 @@ public class MenuController {
         game.game(gameScene, gameRoot, stage, endGameScene, endgameRoot);
     }
 
+    @FXML
+    protected void btnQuit(){
+
+    }
+
+    @FXML
+    protected void OnQuitButtonClick(ActionEvent e) throws IOException {
+        System.exit(0);
+    }
+
+    @FXML
+    protected void btnTheme(){
+
+    }
+
+    @FXML
+    protected void OnThemeButtonClick(ActionEvent e) throws IOException {
+
+    }
 }

@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class Main extends Application {
     private static Stage theStage;
-    Media ost = new Media(getClass().getResource("/com/example/game/Thin Ice.mp3").toExternalForm());
+    Media ost = new Media(getClass().getResource("/com/example/game/London freestyle.mp3").toExternalForm());
     MediaPlayer mediaPlayer = new MediaPlayer(ost);
 
     public static Stage get_theStage() {

@@ -1,2 +1,4 @@
-package com.example.game;public class ThemeController {
+package com.example.game;
+
+public class ThemeController {
 }
