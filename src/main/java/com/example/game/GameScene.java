@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.game;
 
 import javafx.application.Platform;
 import javafx.scene.Group;
