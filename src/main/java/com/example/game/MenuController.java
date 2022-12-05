@@ -1,27 +1,14 @@
-package com.example.demo;
+package com.example.game;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.application.Application;
-import javafx.event.EventHandler;
-import javafx.fxml.FXMLLoader;
-import javafx.geometry.Insets;
 import javafx.scene.Group;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.*;
-import javafx.scene.control.ButtonType;
-import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
-import javafx.scene.control.Button;
-import javafx.scene.shape.Rectangle;
 
 import java.io.IOException;
-import java.util.Optional;
-import java.util.Scanner;
 
 public class MenuController {
     private Stage stage;
