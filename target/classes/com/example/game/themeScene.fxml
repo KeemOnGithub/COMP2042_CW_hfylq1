@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(237, 198, 61);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game.ThemeController">
+   <children>
+      <HBox layoutX="65.0" layoutY="200.0" prefHeight="100.0" prefWidth="469.0">
+         <children>
+            <Button fx:id="btnGreen" mnemonicParsing="false" onAction="#OnThemeGreenClick" prefHeight="107.0" prefWidth="117.0" style="-fx-background-color: rgb(119, 221, 119); -fx-border-width: 1px; -fx-border-style: solid;" />
+            <Button fx:id="btnCream" mnemonicParsing="false" onAction="#OnThemeCreamClick" prefHeight="107.0" prefWidth="117.0" style="-fx-border-style: solid; -fx-background-color: rgb(255, 253, 208); -fx-border-width: 1px;" />
+            <Button fx:id="btnBlue" mnemonicParsing="false" onAction="#OnThemeBlueClick" prefHeight="107.0" prefWidth="117.0" style="-fx-background-color: rgb(179, 206, 229); -fx-border-style: solid; -fx-border-width: 1px;" />
+            <Button fx:id="btnGold" mnemonicParsing="false" onAction="#OnThemeGoldClick" prefHeight="107.0" prefWidth="117.0" style="-fx-background-color: rgb(237, 198, 61); -fx-border-width: 1px; -fx-border-style: solid;" />
+         </children>
+      </HBox>
+      <TextField alignment="CENTER" layoutX="197.0" layoutY="26.0" prefHeight="68.0" prefWidth="205.0" style="-fx-background-color: rgb(237, 198, 61);" text="THEME">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="113.0" layoutY="103.0" prefHeight="25.0" prefWidth="373.0" style="-fx-background-color: rgb(237, 198, 61);" text="To change the background colour, select any of the colours below!" />
+      <Button fx:id="btnBack" layoutX="508.0" layoutY="348.0" mnemonicParsing="false" onAction="#OnBackButtonClick" prefHeight="25.0" prefWidth="49.0" text="Back" />
+   </children>
+</AnchorPane>

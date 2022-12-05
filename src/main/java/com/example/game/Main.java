@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class Main extends Application {
     private static Stage theStage;
-    Media ost = new Media(getClass().getResource("/com/example/game/Thin Ice.mp3").toExternalForm());
+    Media ost = new Media(getClass().getResource("/com/example/game/London freestyle.mp3").toExternalForm());
     MediaPlayer mediaPlayer = new MediaPlayer(ost);
 
     public static Stage get_theStage() {
@@ -25,11 +25,11 @@ public class Main extends Application {
         theStage = primaryStage;
         theStage.setResizable(false);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("menuScene.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene menu = new Scene(fxmlLoader.load(), 600, 400);
         mediaPlayer.play();
 
         theStage.setTitle("2048");
-        theStage.setScene(scene);
+        theStage.setScene(menu);
         theStage.show();
 
         /*Group menuRoot = new Group();
