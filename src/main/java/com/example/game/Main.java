@@ -13,21 +13,8 @@ import java.util.Scanner;
 
 public class Main extends Application {
     private static Stage theStage;
-    static final int WIDTH = 900;
-    static final int HEIGHT = 900;
-    private Group menuRoot = new Group();
-    private Scene menuScene = new Scene(menuRoot, WIDTH, HEIGHT, Color.rgb(189, 177, 92));
-    private static Scanner input= new Scanner(System.in);
-    Media ost = new Media(getClass().getResource("Thin Ice.mp3").toExternalForm());
+    Media ost = new Media(getClass().getResource("/com/example/game/Thin Ice.mp3").toExternalForm());
     MediaPlayer mediaPlayer = new MediaPlayer(ost);
-
-    /*public void setGameScene(Scene gameScene) {
-        this.gameScene = gameScene;
-    }
-
-    public void setMenuRoot(Group menuRoot) {
-        this.menuRoot = menuRoot;
-    }*/
 
     public static Stage get_theStage() {
         return theStage;
