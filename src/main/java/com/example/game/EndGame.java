@@ -54,7 +54,7 @@ public class EndGame {
 
                 Optional<ButtonType> result = alert.showAndWait();
                 if (result.get() == ButtonType.OK){
-                    root.getChildren().clear();
+                    System.exit(0);
                 }
             }
         });

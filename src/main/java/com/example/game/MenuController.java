@@ -3,7 +3,6 @@ package com.example.game;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -11,12 +10,9 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class MenuController {
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
     static final int WIDTH = 800;
     static final int HEIGHT = 650;
-    Main main_stuff = new Main();
+    //Main main_stuff = new Main();
 
     @FXML
     protected void btnStart(){
@@ -25,7 +21,7 @@ public class MenuController {
 
     @FXML
     protected void OnStartButtonClick(ActionEvent e) throws IOException {
-        stage = main_stuff.get_theStage();
+        Stage stage = Main.get_theStage();
         stage.setX(200);
         stage.setY(0);
         GameScene game = new GameScene();
