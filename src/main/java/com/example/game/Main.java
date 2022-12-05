@@ -25,11 +25,11 @@ public class Main extends Application {
         theStage = primaryStage;
         theStage.setResizable(false);
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("menuScene.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        Scene menu = new Scene(fxmlLoader.load(), 600, 400);
         mediaPlayer.play();
 
         theStage.setTitle("2048");
-        theStage.setScene(scene);
+        theStage.setScene(menu);
         theStage.show();
 
         /*Group menuRoot = new Group();

@@ -2,6 +2,7 @@ package com.example.game;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
@@ -54,6 +55,12 @@ public class MenuController {
 
     @FXML
     protected void OnThemeButtonClick(ActionEvent e) throws IOException {
+        Stage stage = Main.get_theStage();
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("themeScene.fxml"));
+        Scene themes = new Scene(fxmlLoader.load(), 600, 400);
 
+        stage.setTitle("2048");
+        stage.setScene(themes);
+        stage.show();
     }
 }

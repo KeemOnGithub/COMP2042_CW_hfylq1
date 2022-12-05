@@ -1,14 +1,20 @@
 package com.example.game;
 
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+import java.io.IOException;
 import java.util.Random;
 
 class GameScene {
@@ -192,11 +198,36 @@ class GameScene {
         text.setText("SCORE :");
         text.setFont(Font.font(30));
         text.relocate(250,550);
+
         Text scoreText = new Text();
         root.getChildren().add(scoreText);
         scoreText.relocate(450,567);
         scoreText.setFont(Font.font(20));
         scoreText.setText("0");
+
+        /*Button back = new Button();
+        back.setText("Back to Menu");
+        back.relocate(100,600);
+        root.getChildren().add(back);
+        back.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                Stage stage = Main.get_theStage();
+                FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("menuScene.fxml"));
+                Scene menu = null;
+                try {
+                    menu = new Scene(fxmlLoader.load(), 600, 400);
+                }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                Main.get_theStage().setTitle("2048");
+                stage.setScene(menu);
+                stage.show();
+            }
+        });*/
+
 
         randomFillNumber(1);
         randomFillNumber(1);

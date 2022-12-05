@@ -8,12 +8,12 @@
 
 <AnchorPane id="gyal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: rgb(237, 198, 61);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game.MenuController">
    <children>
-      <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="118.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="93.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@2048_logo.svg.png" />
          </image>
       </ImageView>
-      <VBox layoutX="418.0" layoutY="100.0" prefHeight="200.0" prefWidth="100.0" spacing="10">
+      <VBox layoutX="401.0" layoutY="110.0" prefHeight="180.0" prefWidth="100.0" spacing="10">
          <children>
             <Button fx:id="btnStart" mnemonicParsing="false" onAction="#OnStartButtonClick" prefHeight="52.0" prefWidth="107.0" text="START" />
             <Button fx:id="btnTheme" mnemonicParsing="false" onAction="#OnThemeButtonClick" prefHeight="52.0" prefWidth="107.0" text="THEMES" />
