@@ -14,6 +14,13 @@ public class MenuController {
     static final int WIDTH = 800;
     static final int HEIGHT = 650;
     //Main main_stuff = new Main();
+    GameScene game = new GameScene();
+    Group gameRoot = new Group();
+    Group endgameRoot = new Group();
+    Scene endGameScene = new Scene(endgameRoot, WIDTH, HEIGHT, Color.rgb(250, 20, 100, 0.2));
+
+    //setGameRoot(gameRoot);
+    Scene gameScene = new Scene(gameRoot, WIDTH, HEIGHT, Color.rgb(237,198,61));
 
     @FXML
     protected void btnStart(){
@@ -25,13 +32,7 @@ public class MenuController {
         Stage stage = Main.get_theStage();
         stage.setX(200);
         stage.setY(0);
-        GameScene game = new GameScene();
-        Group gameRoot = new Group();
-        Group endgameRoot = new Group();
-        Scene endGameScene = new Scene(endgameRoot, WIDTH, HEIGHT, Color.rgb(250, 20, 100, 0.2));
 
-        //setGameRoot(gameRoot);
-        Scene gameScene = new Scene(gameRoot, WIDTH, HEIGHT, Color.rgb(237,198,61));
         //setGameScene(gameScene);
         stage.setScene(gameScene);
 

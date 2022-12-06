@@ -4,11 +4,13 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class ThemeController {
+    MenuController mc = new MenuController();
 
     @FXML
     protected void btnGreen(){
@@ -17,7 +19,8 @@ public class ThemeController {
 
     @FXML
     protected void OnThemeGreenClick(ActionEvent e) throws IOException {
-
+        mc.OnStartButtonClick(e);
+        mc.gameScene.setFill(Color.rgb(119, 221, 119));
     }
 
     @FXML
@@ -27,7 +30,8 @@ public class ThemeController {
 
     @FXML
     protected void OnThemeCreamClick(ActionEvent e) throws IOException {
-
+        mc.OnStartButtonClick(e);
+        mc.gameScene.setFill(Color.rgb( 255, 253, 208));
     }
 
     @FXML
@@ -37,7 +41,8 @@ public class ThemeController {
 
     @FXML
     protected void OnThemeBlueClick(ActionEvent e) throws IOException {
-
+        mc.OnStartButtonClick(e);
+        mc.gameScene.setFill(Color.rgb( 179, 206, 229));
     }
 
     @FXML
@@ -47,7 +52,8 @@ public class ThemeController {
 
     @FXML
     protected void OnThemeGoldClick(ActionEvent e) throws IOException {
-
+        mc.OnStartButtonClick(e);
+        mc.gameScene.setFill(Color.rgb(237, 198, 61));
     }
 
     @FXML
