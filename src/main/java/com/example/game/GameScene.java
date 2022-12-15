@@ -205,8 +205,8 @@ class GameScene {
         scoreText.setFont(Font.font(20));
         scoreText.setText("0");
 
-        /*Button back = new Button();
-        back.setText("Back to Menu");
+        Button back = new Button("Back to Menu");
+        back.setFocusTraversable(false);
         back.relocate(100,600);
         root.getChildren().add(back);
         back.setOnAction(new EventHandler<ActionEvent>() {
@@ -226,7 +226,7 @@ class GameScene {
                 stage.setScene(menu);
                 stage.show();
             }
-        });*/
+        });
 
 
         randomFillNumber(1);
