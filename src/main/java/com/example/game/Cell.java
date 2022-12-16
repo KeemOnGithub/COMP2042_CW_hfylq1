@@ -19,6 +19,14 @@ public class Cell {
         return modify;
     }
 
+    /**
+     * Constructor method for cells
+     *
+     * @param x
+     * @param y
+     * @param scale
+     * @param root
+     */
     Cell(double x, double y, double scale, Group root) {
         rectangle = new Rectangle();
         rectangle.setX(x);

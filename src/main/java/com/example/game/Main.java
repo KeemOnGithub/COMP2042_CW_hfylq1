@@ -1,26 +1,22 @@
 package com.example.game;
 
-/**
- * This class is responsible for creating the stage, opening the main menu and activating the background music.
- *
- * @file Main.java
- * @author Myco
- */
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Group;
 import javafx.scene.Scene;
 import javafx.scene.media.MediaPlayer;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import javafx.scene.media.Media;
 
-import java.util.Scanner;
+/**
+ * This class is responsible for creating the stage, opening the main menu and activating the background music.
+ *
+ * @author Luqmanul Hakeem Bin Qhaireel Anwar
+ *
+ */
 
 public class Main extends Application {
     private static Stage theStage;
-    Media ost = new Media(getClass().getResource("/com/example/game/London freestyle.mp3").toExternalForm());
+    Media ost = new Media(getClass().getResource("/com/example/game/Thin Ice.mp3").toExternalForm());
     MediaPlayer mediaPlayer = new MediaPlayer(ost);
 
     /**
@@ -38,8 +34,6 @@ public class Main extends Application {
      * @param primaryStage the stage created for our JavaFX program, which is assigned to theStage
      * @throws Exception
      */
-
-
     @Override
     public void start(Stage primaryStage) throws Exception {
         theStage = primaryStage;
@@ -51,37 +45,6 @@ public class Main extends Application {
         theStage.setTitle("2048");
         theStage.setScene(menu);
         theStage.show();
-
-        /*Group menuRoot = new Group();
-        Scene menuScene = new Scene(menuRoot, WIDTH, HEIGHT);
-        Group accountRoot = new Group();
-        Scene accountScene = new Scene(accountRoot, WIDTH, HEIGHT, Color.rgb(150, 20, 100, 0.2));
-        Group getAccountRoot = new Group();
-        Scene getAccountScene = new Scene(getAccountRoot, WIDTH, HEIGHT, Color.rgb(200, 20, 100, 0.2));
-        Group endgameRoot = new Group();
-        Scene endGameScene = new Scene(endgameRoot, WIDTH, HEIGHT, Color.rgb(250, 20, 100, 0.2));
-        Group rankRoot = new Group();
-        Scene rankScene = new Scene(rankRoot, WIDTH, HEIGHT, Color.rgb(250, 50, 120, 0.3));
-        BackgroundFill background_fill = new BackgroundFill(Color.rgb(120, 100, 100), CornerRadii.EMPTY, Insets.EMPTY);
-        Background background = new Background(background_fill);
-
-        Rectangle backgroundOfMenu = new Rectangle(240, 120, Color.rgb(120, 120, 120, 0.2));
-        backgroundOfMenu.setX(WIDTH / 2 - 120);
-        backgroundOfMenu.setY(180);
-        menuRoot.getChildren().add(backgroundOfMenu);
-
-        Rectangle backgroundOfMenuForPlay = new Rectangle(240, 140, Color.rgb(120, 20, 100, 0.2));
-        backgroundOfMenuForPlay.setX(WIDTH / 2 - 120);
-        backgroundOfMenuForPlay.setY(180);
-        accountRoot.getChildren().add(backgroundOfMenuForPlay);
-
-        Group gameRoot = new Group();
-        setGameRoot(gameRoot);
-        Scene gameScene = new Scene(gameRoot, WIDTH, HEIGHT, Color.rgb(189, 177, 92));
-        setGameScene(gameScene);
-        primaryStage.setScene(gameScene);
-        GameScene game = new GameScene();
-        game.game(gameScene, gameRoot, primaryStage, endGameScene, endgameRoot);*/
     }
 
     public static void main(String[] args) {
