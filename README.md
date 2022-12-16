@@ -50,6 +50,6 @@ A Java version of the open-source game 2048, taken from a source file and refact
   - Back button created in method 'game'
   - variable leftSpacing created to reposition cells
   - Fields 'text' and 'scoreText' relocated
--EndGame
+- EndGame
   - Unused parameters removed from method endGameScene
   
