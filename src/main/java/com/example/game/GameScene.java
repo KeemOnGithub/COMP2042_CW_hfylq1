@@ -17,6 +17,7 @@ import java.util.Random;
 /**
  * This class is responsible for running gameScene, and also for  certain cell operations such as assigning values.
  *
+ *  @author Luqmanul Hakeem Bin Qhaireel Anwar-modified
  */
 
 class GameScene {

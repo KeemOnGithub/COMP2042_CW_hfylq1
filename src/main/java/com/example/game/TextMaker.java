@@ -7,6 +7,7 @@ import javafx.scene.text.Text;
 /**
  * This is a singleton class which creates the numerical text within the cells.
  *
+ * @author Luqmanul Hakeem Bin Qhaireel Anwar-modified
  */
 class TextMaker {
     private static TextMaker singleInstance = null;
@@ -15,8 +16,9 @@ class TextMaker {
 
     }
 
+
     /**
-     * Ensures only a single instance og TextMaker is made
+     * Ensures only a single instance of TextMaker is made
      *
      * @return singleInstance, a single instance of TextMaker
      */
@@ -44,6 +46,7 @@ class TextMaker {
 
         return text;
     }
+
 
     static void changeTwoText(Text first, Text second) {
         String temp;

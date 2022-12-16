@@ -3,6 +3,7 @@ package com.example.game;
 /**
  * This class contains methods responsible for moving cells horizontally and vertically.
  *
+ * @author Luqmanul Hakeem Bin Qhaireel Anwar
  */
 public class MoveBoxes {
     private GameScene gameScene;

@@ -16,6 +16,7 @@ import java.util.Optional;
  * This class is responsible for creating the endGameScene and its objects, while ensuring that only a
  * single instance of this runs at a time.
  *
+ * @author Luqmanul Hakeem Bin Qhaireel Anwar-modified
  */
 public class EndGame {
     private static EndGame singleInstance = null;

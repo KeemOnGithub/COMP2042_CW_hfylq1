@@ -12,6 +12,7 @@ import java.io.IOException;
 /**
  * This class is a controller for menuScene.
  *
+ * @author Luqmanul Hakeem Bin Qhaireel Anwar
  */
 public class MenuController {
     static final int WIDTH = 800;

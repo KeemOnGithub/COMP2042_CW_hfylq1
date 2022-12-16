@@ -10,7 +10,7 @@ import javafx.scene.media.Media;
 /**
  * This class is responsible for creating the stage, opening the main menu and activating the background music.
  *
- * @author Luqmanul Hakeem Bin Qhaireel Anwar
+ * @author Luqmanul Hakeem Bin Qhaireel Anwar-modified
  *
  */
 

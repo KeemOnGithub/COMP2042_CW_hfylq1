@@ -8,6 +8,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * This class contains methods for themeScene (changing background colors, going back to menuScene)
+ *
+ * @author Luqmanul Hakeem Bin Qhaireel Anwar
+ */
 public class ThemeController {
     MenuController menu = new MenuController();
 
