@@ -1,7 +1,7 @@
 # 2048
 ## Information
-Student Name: Luqmanul Hakeem Bin Qhaireel Anwar
-Student ID: 20299396
+- Student Name: Luqmanul Hakeem Bin Qhaireel Anwar
+- Student ID: 20299396
 ## Project Description
 A Java version of the open-source game 2048, taken from a source file and refactored for better encapsulation and a user-friendly UI!
 ## How do I run this?
