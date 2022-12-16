@@ -1,5 +1,12 @@
 package com.example.game;
 
+/**
+ * This class is responsible for creating the stage, opening the main menu and activating the background music.
+ *
+ * @file Main.java
+ * @author Myco
+ */
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
@@ -16,9 +23,22 @@ public class Main extends Application {
     Media ost = new Media(getClass().getResource("/com/example/game/London freestyle.mp3").toExternalForm());
     MediaPlayer mediaPlayer = new MediaPlayer(ost);
 
+    /**
+     * This method is a getter for 'theStage' variable, which is simply the name for the primary stage created later.
+     *
+     * @return theStage
+     */
     public static Stage get_theStage() {
         return theStage;
     }
+
+    /**
+     * This method is responsible for creating the stage, making it unresizable, loading and showing the main menu scene, and playing background music.
+     *
+     * @param primaryStage the stage created for our JavaFX program, which is assigned to theStage
+     * @throws Exception
+     */
+
 
     @Override
     public void start(Stage primaryStage) throws Exception {

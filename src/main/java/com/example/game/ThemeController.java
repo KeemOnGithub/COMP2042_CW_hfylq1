@@ -1,66 +1,99 @@
 package com.example.game;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.CycleMethod;
-import javafx.scene.paint.LinearGradient;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
 public class ThemeController {
-    MenuController mc = new MenuController();
+    MenuController menu = new MenuController();
 
+    /**
+     * A constructor method for the 'Green' button.
+     *
+     */
     @FXML
     protected void btnGreen(){
 
     }
 
+    /**
+     * This method will change the background color of gameScene to green when clicked.
+     *
+     */
     @FXML
-    protected void OnThemeGreenClick(ActionEvent e) throws IOException {
-        mc.OnStartButtonClick(e);
-        //LinearGradient gradient = new LinearGradient(0, 0, 1, 0, true, CycleMethod.NO_CYCLE, stops);
-        mc.gameScene.setFill(Color.rgb(119, 221, 119));
+    protected void OnThemeGreenClick() {
+        menu.OnStartButtonClick();
+        menu.gameScene.setFill(Color.rgb(119, 221, 119));
     }
 
+    /**
+     * A constructor method for the 'Cream' button.
+     *
+     */
     @FXML
     protected void btnCream(){
 
     }
 
+    /**
+     * This method will change the background color of gameScene to cream when clicked.
+     *
+     */
     @FXML
-    protected void OnThemeCreamClick(ActionEvent e) throws IOException {
-        mc.OnStartButtonClick(e);
-        mc.gameScene.setFill(Color.rgb( 255, 253, 208));
+    protected void OnThemeCreamClick() {
+        menu.OnStartButtonClick();
+        menu.gameScene.setFill(Color.rgb( 255, 253, 208));
     }
 
+    /**
+     * A constructor method for the 'Blue' button.
+     *
+     */
     @FXML
     protected void btnBlue(){
 
     }
 
+    /**
+     * This method will change the background color of gameScene to blue when clicked.
+     *
+     */
     @FXML
-    protected void OnThemeBlueClick(ActionEvent e) throws IOException {
-        mc.OnStartButtonClick(e);
-        mc.gameScene.setFill(Color.rgb( 179, 206, 229));
+    protected void OnThemeBlueClick() {
+        menu.OnStartButtonClick();
+        menu.gameScene.setFill(Color.rgb( 179, 206, 229));
     }
 
+    /**
+     * A constructor method for the 'Gold' button.
+     *
+     */
     @FXML
     protected void btnGold(){
 
     }
 
+    /**
+     * This method will change the background color of gameScene to gold when clicked.
+     *
+     */
     @FXML
-    protected void OnThemeGoldClick(ActionEvent e) throws IOException {
-        mc.OnStartButtonClick(e);
-        mc.gameScene.setFill(Color.rgb(237, 198, 61));
+    protected void OnThemeGoldClick() {
+        menu.OnStartButtonClick();
+        menu.gameScene.setFill(Color.rgb(237, 198, 61));
     }
 
+    /**
+     * This method loads menuScene and will show it when the Back button is clicked.
+     *
+     * @throws IOException
+     */
     @FXML
-    protected void OnBackButtonClick(ActionEvent e) throws IOException {
+    protected void OnBackButtonClick() throws IOException {
         Stage stage = Main.get_theStage();
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("menuScene.fxml"));
         Scene menu = new Scene(fxmlLoader.load(), 600, 400);
