@@ -6,7 +6,7 @@
 A Java version of the open-source game 2048, taken from a source file and refactored for better encapsulation and a user-friendly UI!
 ## How do I run this?
 1. Create a new JavaFX file 
-    - if using IntelliJ, you can create the tutorial Demo file, then switch out the files in the tutorial com.example.demo folder with the files in com.example.demo.
+    - if using IntelliJ, you can create the tutorial Demo file, then switch out the files in the tutorial com.example.demo folder with the files in the newly downloaded com.example.demo. Do this for both the java and resources folders, and switch the module-info.java file too.
     - if using Eclipse, you will have to open the project and download the JavaFX libraries.
 2. Run Main!
 ## Implemented features
