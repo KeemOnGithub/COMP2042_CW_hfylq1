@@ -1,4 +1,4 @@
-package com.example.game;
+package com.example.demo;
 
 /**
  * This class contains methods responsible for moving cells horizontally and vertically.

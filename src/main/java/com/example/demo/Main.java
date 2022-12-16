@@ -1,4 +1,4 @@
-package com.example.game;
+package com.example.demo;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,7 +16,7 @@ import javafx.scene.media.Media;
 
 public class Main extends Application {
     private static Stage theStage;
-    Media ost = new Media(getClass().getResource("/com/example/game/Thin Ice.mp3").toExternalForm());
+    Media ost = new Media(getClass().getResource("/com/example/demo/Thin Ice.mp3").toExternalForm());
     MediaPlayer mediaPlayer = new MediaPlayer(ost);
 
     /**

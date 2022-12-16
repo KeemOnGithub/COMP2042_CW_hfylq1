@@ -1,4 +1,4 @@
-package com.example.game;
+package com.example.demo;
 
 import javafx.scene.Group;
 import javafx.scene.paint.Color;
