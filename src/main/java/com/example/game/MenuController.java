@@ -15,15 +15,35 @@ import java.io.IOException;
  * @author Luqmanul Hakeem Bin Qhaireel Anwar
  */
 public class MenuController {
+    /**
+     * This field is the width of endGameScene and gameScene.
+     */
     static final int WIDTH = 800;
+    /**
+     * This field is the height of endGameScene and gameScene.
+     */
     static final int HEIGHT = 650;
     //Main main_stuff = new Main();
+    /**
+     * This field is an object of gameScene.
+     */
     GameScene game = new GameScene();
+    /**
+     * This field is the root node for gameScene.
+     */
     Group gameRoot = new Group();
+    /**
+     * This field is the root node for endGameScene.
+     */
     Group endgameRoot = new Group();
+    /**
+     * This field creates a new scene used for EndGame
+     */
     Scene endGameScene = new Scene(endgameRoot, WIDTH, HEIGHT, Color.rgb(250, 20, 100, 0.2));
 
-    //setGameRoot(gameRoot);
+    /**
+     * This field creates a new scene used for GameScene
+     */
     Scene gameScene = new Scene(gameRoot, WIDTH, HEIGHT, Color.rgb(237,198,61));
 
     /**

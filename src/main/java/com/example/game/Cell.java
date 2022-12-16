@@ -14,8 +14,15 @@ import javafx.scene.text.Text;
 
 
 public class Cell {
+    /**
+     * This field creates the physical shape of each cell.
+     */
     private Rectangle rectangle;
+    /**
+     * This field is the root node.
+     */
     private Group root;
+
     private Text textClass;
     private boolean modify = false;
 
@@ -124,10 +131,20 @@ public class Cell {
 
     }
 
+    /**
+     * This method is a getter for the x value of a cell.
+     *
+     * @return the x value of a rectangle
+     */
     double getX() {
         return rectangle.getX();
     }
 
+    /**
+     * This method is a getter for the y value of a cell.
+     *
+     * @return the y value of a rectangle
+     */
     double getY() {
         return rectangle.getY();
     }

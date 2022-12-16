@@ -20,7 +20,7 @@ import java.util.Random;
  *  @author Luqmanul Hakeem Bin Qhaireel Anwar-modified
  */
 
-class GameScene {
+public class GameScene {
     private MoveBoxes box;
 
     /**
@@ -33,11 +33,23 @@ class GameScene {
     }
 
     private static int HEIGHT = 500;
+    /**
+     * This field is the number of rows and columns.
+     */
     public static int n = 4;
     private final static int distanceBetweenCells = 10;
+    /**
+     * Field used to get x and y values of cells in {@link #game(Scene, Group, Stage, Scene, Group)}
+     */
     private static double LENGTH = (HEIGHT - ((n + 1) * distanceBetweenCells)) / (double) n;
+    /**
+     * An instance of TextMaker used in {@link #randomFillNumber()}
+     */
     private TextMaker textMaker = TextMaker.getSingleInstance();
     public Cell[][] cells = new Cell[n][n];
+    /**
+     * The root node
+     */
     private Group root;
     private long score = 0;
 
