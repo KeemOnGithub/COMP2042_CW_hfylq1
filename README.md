@@ -24,7 +24,6 @@ A Java version of the open-source game 2048, taken from a source file and refact
     - Background music added
     - Score moved to bottom
     - Tiles centered
-      
 ## Features not implemented
 - Account
     - For a simple game to play when bored, having an account system seems too much
@@ -35,6 +34,7 @@ A Java version of the open-source game 2048, taken from a source file and refact
         - Done to decrease size of gameScene
 - Simplified if statements 
 - Unnecessary import statements removed
+- module-info.java added
 
 ## New Java classes made
 - MoveBoxes
