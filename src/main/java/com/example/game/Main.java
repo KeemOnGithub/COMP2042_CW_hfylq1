@@ -29,7 +29,7 @@ public class Main extends Application {
     }
 
     /**
-     * This method is responsible for creating the stage, making it unresizable, loading and showing the main menu scene, and playing background music.
+     * This method is responsible for creating the stage, disabling user resizing, loading and showing the main menu scene, and playing background music.
      *
      * @param primaryStage the stage created for our JavaFX program, which is assigned to theStage
      * @throws Exception

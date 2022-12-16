@@ -5,6 +5,14 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
 
+/**
+ * This class is responsible for creating and modifying cells.
+ *
+ * @author Luqmanul Hakeem Bin Qhaireel Anwar-modified
+ *
+ */
+
+
 public class Cell {
     private Rectangle rectangle;
     private Group root;
@@ -35,6 +43,11 @@ public class Cell {
         this.textClass = textClass;
     }
 
+    /**
+     * This method will remove the cell when it meets another cell with the same value adjacent to it.
+     *
+     * @param cell
+     */
     void changeCell(Cell cell) {
         TextMaker.changeTwoText(textClass, cell.getTextClass());
         root.getChildren().remove(cell.getTextClass());
@@ -49,6 +62,12 @@ public class Cell {
         setColorByNumber(getNumber());
         cell.setColorByNumber(cell.getNumber());
     }
+
+    /**
+     * The method is responsible for adding the values of adjacent cells with the same values.
+     *
+     * @param cell
+     */
     void adder(Cell cell) {
         cell.getTextClass().setText((cell.getNumber() + this.getNumber()) + "");
         textClass.setText("0");
@@ -57,6 +76,11 @@ public class Cell {
         setColorByNumber(getNumber());
     }
 
+    /**
+     * This method will change the color of the cell depending on its value.
+     *
+     * @param number the value of the cell
+     */
     void setColorByNumber(int number) {
         switch (number) {
             case 0:

@@ -47,7 +47,6 @@ class TextMaker {
         return text;
     }
 
-
     static void changeTwoText(Text first, Text second) {
         String temp;
         temp = first.getText();

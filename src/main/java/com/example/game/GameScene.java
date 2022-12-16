@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.util.Random;
 
 /**
- * This class is responsible for running gameScene, and also for  certain cell operations such as assigning values.
+ * This class is responsible for running gameScene, and also for certain cell operations such as assigning values.
  *
  *  @author Luqmanul Hakeem Bin Qhaireel Anwar-modified
  */
@@ -237,7 +237,7 @@ class GameScene {
      * @param endGameScene scene which opens once cells can no longer move. Will display a GAME OVER message.
      * @param endGameRoot root node for endGameScene.
      */
-    void game(Scene gameScene, Group root, Stage primaryStage, Scene endGameScene, Group endGameRoot) {
+    public void game(Scene gameScene, Group root, Stage primaryStage, Scene endGameScene, Group endGameRoot) {
         this.root = root;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
