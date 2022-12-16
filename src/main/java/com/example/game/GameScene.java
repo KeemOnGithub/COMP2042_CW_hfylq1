@@ -21,6 +21,9 @@ import java.util.Random;
  */
 
 public class GameScene {
+    /**
+     * An object of class MoveBoxes
+     */
     private MoveBoxes box;
 
     /**
@@ -37,6 +40,9 @@ public class GameScene {
      * This field is the number of rows and columns.
      */
     public static int n = 4;
+    /**
+     * This field is the set distance between cells.
+     */
     private final static int distanceBetweenCells = 10;
     /**
      * Field used to get x and y values of cells in {@link #game(Scene, Group, Stage, Scene, Group)}
@@ -46,6 +52,9 @@ public class GameScene {
      * An instance of TextMaker used in {@link #randomFillNumber()}
      */
     private TextMaker textMaker = TextMaker.getSingleInstance();
+    /**
+     * This field is used later for cell operations.
+     */
     public Cell[][] cells = new Cell[n][n];
     /**
      * The root node
